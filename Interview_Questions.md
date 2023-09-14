@@ -69,15 +69,9 @@ In Go, methods can be associated with either value receivers or pointer receiver
 30. What is the difference between a mutex and a RWMutex in Go?
 A mutex is used to provide exclusive access to a shared resource, allowing only one Goroutine at a time. An RWMutex (Read-Write Mutex) allows multiple Goroutines to read the resource at the same time but ensures exclusive access for writing.
 31. Why is multi-threading so popular in golang ?
-Most of the programming languages create `kernel-level` threads, which incurs a large amount of overhead and may lead to expensive context switches.
-Whereas in Go the threads are `user-level`. The Go runtime, which is built in Go and offers a lightweight scheduler that can effectively handle dozens or even millions of Go routines.
-
-Also the fact that Go routines share an address space and heap makes the routines light weight because there is no need to duplicate
-data between threads or processes in order for them to communicate and share information.
-
-Because of the above reasons, writing concurrent code in Go is simple and doesn't need thinking about problems
+Most of the programming languages create `kernel-level` threads, which incurs a large amount of overhead and may lead to expensive context switches. Whereas in Go the threads are `user-level`. The Go runtime, which is built in Go and offers a lightweight scheduler that can effectively handle dozens or even millions of Go routines. Also, Go routines share an address space and heap makes the routines light weight because there is no need to duplicate data between threads or processes in order for them to communicate and share information.
+For this reasons, writing concurrent code in Go is simple and doesn't need thinking about problems
 like deadlocks, race situations, or memory synchronization. 
-
 32. Can you eloborate the difference between user-level and kernal-level threads ?
 User-level threads and kernel-level threads are two different approaches to implementing threads in an operating system. 
 Here is a detailed difference between the two:
@@ -97,19 +91,13 @@ Here is a detailed difference between the two:
 `var a int = 5`
 `var a = 5`
 
-In the first declaration, user has explicitly defined the variable types as intiger. Whereas in the second line, go compiler automatically determine the data type of a variable based on its initialization value. So, Go has the capability to infer the type of initialized variables.
-
-However, it is still a good practice to declare the variable type explicitly, even if Go can infer it. Explicitly declaring the variable type can make the code more readable and can also help to prevent errors. For example, if you accidentally initialize a variable with a different data type than what you intended, the compiler will still infer the wrong type, and it may cause unexpected behavior or errors in the program.
-
+In the first declaration, user has explicitly defined the variable types as intiger. Whereas in the second line, go compiler automatically determine the data type of a variable based on its initialization value. So, Go has the capability to infer the type of initialized variables. It is still a good to declare the variable type explicitly, even if Go can infer it. Explicitly declaring the variable type can make the code more readable and can also help to prevent errors. For example, if you accidentally initialize a variable with a different data type than what you intended, the compiler will still infer the wrong type, and it may cause unexpected behavior or errors in the program.
 34. What is the difference between array and slice in golang ?
-
 An array is a set of elements with a specified size that are stored in contiguous memory locations.
    - The array's size is fixed at declaration time and cannot be modified.
    - The complete array is kept in a single block of memory, and each element of the array takes up the same amount of memory.
-
 A slice, on the other hand, is a dynamic data structure made up of a length, a capacity, and a pointer to an underlying array. Because they don't need as much memory for the pointer and capacity values, slices are usually smaller than arrays.
-
-Suppose you are building an application that processes images and you need to store the pixel values of the image. In this case, the size of the image is known ahead of time and does not change dynamically. You could use an array to store the pixel values of the image, with each element of the array representing a pixel. This would be more memory-efficient than using a slice, which would require additional memory for the pointer and capacity values.
+If you are building an application that processes images and you need to store the pixel values of the image. In this case, the size of the image is known ahead of time and does not change dynamically. You could use an array to store the pixel values of the image, with each element of the array representing a pixel. This would be more memory-efficient than using a slice, which would require additional memory for the pointer and capacity values.
 
 ```
 package main
