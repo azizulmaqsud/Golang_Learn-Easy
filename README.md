@@ -24,7 +24,7 @@ The Go compiler, which is a component of the Go installation, takes your source 
 
 Because to this, it is simple to distribute and run Go applications across several platforms without worrying about the target system's Go version or any other requirements. 
 
-## Go vs Python vs Java
+## Python vs Java vs Go
 
 ## Syntax and Readability:
 - Python: Python is known for its clean and readable syntax. It emphasizes code readability and simplicity.
