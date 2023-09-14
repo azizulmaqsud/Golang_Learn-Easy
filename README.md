@@ -77,4 +77,22 @@ Each of these languages has its strengths and is suitable for different types of
 It is a known fact that popular devops applications such as Kubernetes, Docker and many are written in Golang. But why ? 
 
 As Go was created with concurrency in mind, writing concurrent and parallel programs is made simpler. Applications for DevOps, which frequently need to handle numerous containers or processes at once, should pay special attention to this. This is one of the primary reasons why Golang is a popular choice in DevOps community.
-# Golang_Learn-Easy
+
+
+## Thank You!
+# Stay Connected !!
+
+https://www.youtube.com/channel/UCNwP7KEElaJ7cdDTLP-KbBg
+
+https://www.linkedin.com/in/azizul-maqsud/
+
+https://azizulmaqsud-1684501031000.hashnode.dev/
+
+https://medium.com/@azizulmaqsud
+
+https://twitter.com/Sohail2me
+
+https://github.com/azizulmaqsud
+
+
+<a href="https://www.buymeacoffee.com/azizulmaqsud"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=scaleupsaas&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a> 
