@@ -1,6 +1,6 @@
 Assignment 1:
 
-Find all numbers between 1 and 100 that are divisible by 3 or 5, but not by 15 ?
+Find numbers between 1 and 100 that are divisible by 3 or 5, but not by 15 ?
 
 Expected Output (Multiple of 15 are missing):
 
